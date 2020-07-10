@@ -2,12 +2,7 @@
 
 ## *Technologie* 
 
-- Application mobile ? Hybride (pour iOS / Android) --> Voir si possibilité d'utiliser iPhone comme device de test : React Native ? Flutter ?
-  - -Si impossible, utilisation d'Android mais seulement utile sur la tablette 
-  -  +Uniquement base de données sur le serveur (Couch ? Mango ? MySQL ?)
--  Site Web Local ? Responsive : Php ? React JS ? Angular ? 
-   -  +Disponible tout systeme, juste une adresse a rentrer sur le navigateur
-   -  -Tout est stocké sur le serveur : BDD, Pages...
+Site local en PHP/MySQL, Utilisation du framework CSS Bulma.
 
 ## *Fonctionnalités*
 - Ajout item dans le frigo (nom, date de pereption, id...)
