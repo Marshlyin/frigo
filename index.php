@@ -1,22 +1,6 @@
 <?php
-
-$servername = "localhost";
-$username = "frigo";
-$password = "fr1g0mdp";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-
 echo('<!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>Mon Frigo</title>
@@ -34,47 +18,16 @@ echo('<!DOCTYPE html>
                 Mon frigo
               </h1 >
               <p class="subtitle is-3">
-                Alors, qu\'est-ce qu\'il nous reste dans le frigo ?
+                What\'s cooking good looking ?
               </p>
         </div>
     </section>
-    <br>
-    <section class="is-centered">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                     <h2 class="title is-3"> À manger au plus vite : </h2>
-                        <div class="table-container">
-                            <table class="table is-striped">
-                                <thead>
-                                    <tr>
-                                      <th>Nourriture</th>
-                                      <th>Date d\'achat</th>
-                                      <th>Date limite</th>                          
-                                    </tr>
-                                  </thead>
-                                  <tfoot>
-                                   <tr>
-                                      <th>Nourriture</th>
-                                      <th>Date d\'achat</th>
-                                      <th>Date limite</th>                          
-                                    </tr>                      
-                                  </tfoot>
-                                  <tbody>
-                                    <tr>
-                                        <td>Test</td>
-                                        <td>01/01/1970</td>
-                                        <td>01/01/1970</td>
-                                    </tr>
-                                  </tbody>
-                            </table>
-                        </div>
-                     </div>
-                </div>
-        </div>
-    </section>  
-</body>
+    <br>');
 
-</html>');
+include "tableau_full.php";
 
+
+
+
+echo('</body></html>');
 ?>
