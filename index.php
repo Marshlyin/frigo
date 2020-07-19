@@ -24,10 +24,10 @@ echo('<!DOCTYPE html>
     </section>
     <br>');
 
+include "form.php";
 include "tableau_full.php";
 
 
 
 
 echo('</body></html>');
-?>

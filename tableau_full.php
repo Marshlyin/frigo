@@ -1,5 +1,4 @@
 <?php
-setlocale(LC_TIME, "fr_FR", "FRENCH");
 $servername = "192.168.1.24";
 $username = "frigo";
 $password = "fr1g0mdp";
