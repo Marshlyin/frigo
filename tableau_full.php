@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 };
 
-$sql = "SELECT * FROM FRIGO ORDER BY expiration_date DESC";
+$sql = "SELECT * FROM FRIGO ORDER BY expiration_date";
 $result = $conn->query($sql);
 
 echo('
@@ -42,8 +42,8 @@ if (!empty($result->num_rows)) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                                         <td>".$row['food']."</td>
-                                        <td>".strftime('%d %B %Y', strtotime($row['expiration_date']))."</td>
                                         <td>".$row['registration_date']."</td>
+                                        <td>".strftime('%d %B %Y', strtotime($row['expiration_date']))."</td>                                        
                                     </tr>";
     }
 }
