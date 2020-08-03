@@ -26,14 +26,16 @@ echo('
                                     <tr>
                                       <th>Food</th>
                                       <th>Purchase date</th>
-                                      <th>Expiration date</th>                          
+                                      <th>Expiration date</th>          
+                                      <th></th>                
                                     </tr>
                                   </thead>
                                   <tfoot>
                                    <tr>
                                       <th>Food</th>
                                       <th>Purchase date</th>
-                                      <th>Expiration date</th>                             
+                                      <th>Expiration date</th>
+                                      <th></th>                                    
                                     </tr>                      
                                   </tfoot>
                                   <tbody>');
@@ -43,7 +45,8 @@ if (!empty($result->num_rows)) {
         echo "<tr>
                                         <td>".$row['food']."</td>
                                         <td>".$row['registration_date']."</td>
-                                        <td>".strftime('%d %B %Y', strtotime($row['expiration_date']))."</td>                                        
+                                        <td>".strftime('%d %B %Y', strtotime($row['expiration_date']))."</td>
+                                        <td><a href='delete.php?id=".$row['id']."' ><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>                                        
                                     </tr>";
     }
 }
