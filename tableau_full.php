@@ -44,7 +44,7 @@ if (!empty($result->num_rows)) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                                         <td>".$row['food']."</td>
-                                        <td>".$row['registration_date']."</td>
+                                        <td>".strftime('%d %B %Y', strtotime($row['registration_date']))."</td>
                                         <td>".strftime('%d %B %Y', strtotime($row['expiration_date']))."</td>
                                         <td><a href='delete.php?id=".$row['id']."' ><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>                                        
                                     </tr>";
